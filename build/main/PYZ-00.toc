@@ -1,4 +1,4 @@
-('/home/kokonut/mesotool/src/build/main/PYZ-00.pyz',
+('/home/kokonut/mesotool/build/main/PYZ-00.pyz',
  [('subprocess', '/usr/lib/python3.10/subprocess.py', 'PYMODULE'),
   ('selectors', '/usr/lib/python3.10/selectors.py', 'PYMODULE'),
   ('contextlib', '/usr/lib/python3.10/contextlib.py', 'PYMODULE'),

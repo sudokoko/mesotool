@@ -168,7 +168,7 @@ generateButton = Button(master, activebackground="#ffa500", activeforeground="#0
 generateButton.pack(in_=bottom, side=RIGHT)
 
 # send button
-sendButton = Button(master, activebackground="#00ff00", activeforeground="#ffffff", height=1, width=10, text="Send", command=lambda:jmsSendProduct())
+sendButton = Button(master, activebackground="#32a852", activeforeground="#ffffff", height=1, width=10, text="Send", command=lambda:jmsSendProduct())
 sendButton.pack(in_=bottom, side=RIGHT)
 
 def jmsSendProduct():
