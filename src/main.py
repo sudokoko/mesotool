@@ -179,7 +179,7 @@ def jmsSendProduct():
         parsedUpperData = parsedData.upper()
         product.delete(1.0, "end")
         product.insert(1.0, parsedUpperData)
-        showinfo("Transmitted!", "The text product was sent to the operational server successfully.")
+        showerror("Send Failed", "The text product was not transmitted.\n\nCould not connect to live server: This environment is sandboxed (403)")
     elif jmsSendConfirm == False:
         showinfo("Cancelled", "Operation was cancelled.")
     else:
