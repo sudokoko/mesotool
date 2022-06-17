@@ -163,12 +163,12 @@ wfos.bind("<FocusIn>", clickWfos)
 product = Text(master, wrap=WORD, width=69)
 product.pack()
 
-# generate
+# generate button
 generateButton = Button(master, activebackground="#ffa500", activeforeground="#000000", height=1, width=10, text="Generate", command=lambda:insertTemplate())
 generateButton.pack(in_=bottom, side=RIGHT)
 
-# send
-sendButton = Button(master, activebackground="#ff0000", activeforeground="#ffffff", height=1, width=10, text="Send", command=lambda:jmsSendProduct())
+# send button
+sendButton = Button(master, activebackground="#00ff00", activeforeground="#ffffff", height=1, width=10, text="Send", command=lambda:jmsSendProduct())
 sendButton.pack(in_=bottom, side=RIGHT)
 
 def jmsSendProduct():
@@ -189,7 +189,7 @@ def jmsSendProduct():
 spcexpire = OptionMenu(master, exptime, *SPC_MCD_EXPIRE)
 spcexpire.pack(in_=bottom, side=RIGHT)
 
-# clear
+# clear button
 clearButton = Button(master, height=1, width=10, text="Clear Text", command=lambda:clearText())
 clearButton.pack(in_=bottom, side=LEFT)
 
