@@ -15,7 +15,7 @@ jobs:
       with:
         python-version: 3.7
 
-    - run: pip install -r requirements.txt pyinstaller
+    - run: pip install pyinstaller
     - run: pyinstaller src/main.py
     - uses: actions/upload-artifact@v2
       with:
