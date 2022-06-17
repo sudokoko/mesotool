@@ -6,5 +6,7 @@ A non-operational version of the Mesoscale Discussion Tool used by SWIC SPC.
 2. Mark the file as executable, if unable to run. `chmod +x mesotool_x.x.x_rel`
 3. Run the executable by typing `./mesotool_x.x.x_rel`.
 
+> **Please note,** moving the executable file outside of `mesotool/dist/main` will break the executable. Consider creating a desktop shortcut to the executable.
+
 ## Having Trouble?
 Open an issue in the Issues tab.
