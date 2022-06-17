@@ -199,7 +199,7 @@ def setDefaultTextParamsForPlaceholder():
     states.insert(1.0, "Enter affected states")
     wfos.insert(1.0, "Enter affected WFOs")
 
-### INITIALIZE TEXT BOXES ###
+### INITIALIZE TEXT BOXES DEFAULT VALUES ###
 setDefaultTextParamsForPlaceholder()
 
 mainloop()
