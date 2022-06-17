@@ -3,7 +3,6 @@ import datetime
 import textwrap
 import os
 from random import randint
-from discord_webhook import DiscordWebhook
 from tkinter import *
 from tkinter.messagebox import askokcancel, askyesno, showinfo, showerror
 
@@ -173,13 +172,11 @@ sendButton = Button(master, activebackground="#ff0000", activeforeground="#fffff
 sendButton.pack(in_=bottom, side=RIGHT)
 
 def jmsSendProduct():
-    jmsSendConfirm = askyesno("Warning!", "***STOP!***\n\nYou are about to TRANSMIT a LIVE MESOSCALE DISCUSSION.\n\nIf you continue, the product will be sent to the operational text database.\n\nContinue?")
+    jmsSendConfirm = askyesno("Warning!", "***STOP!***\n\nYou are about to TRANSMIT a IN-HOUSE DEMO MESOSCALE DISCUSSION.\n\nThis sandbox environment is firewalled. If you choose to continue, the product will not leave your computer.\n\nContinue?")
     if jmsSendConfirm == True:
         data = str(product.get(1.0, "end"))
         parsedData = "".join(data)
         parsedUpperData = parsedData.upper()
-        webhook = DiscordWebhook(url="https://discord.com/api/webhooks/983367132010143784/7PEQzDB5SXhaV077MM0ZzeVleOdGGfkUqFVxbSZESgE2oTqsmEYQIyWfNA1dhWo-Y8wC", content="```\n" + str(parsedUpperData) + "```")
-        response = webhook.execute()
         product.delete(1.0, "end")
         product.insert(1.0, parsedUpperData)
         showinfo("Transmitted!", "The text product was sent to the operational server successfully.")
