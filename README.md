@@ -1,7 +1,7 @@
 # MesoTool
 A non-operational version of the Mesoscale Discussion Tool used by SWIC SPC. 
 
-()[https://img.shields.io/appveyor/build/sudokoko/mesotool]
+[](https://img.shields.io/appveyor/build/sudokoko/mesotool)
 
 ## Installation Instructions
 1. Download the latest executable from the Releases tab. *(Alternatively, you can download the latest source code tarball from the Releases tab and run `main.py` yourself)*
